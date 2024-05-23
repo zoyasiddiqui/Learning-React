@@ -1,2 +1,5 @@
 Every browser has a javascript engine
 If you right click and inspect on Chrome and then check out the console, that is what runs your code!
+
+To run javascript with node, use command prompt. Navigate to the right folder. 
+Then, type "node <filename>"
