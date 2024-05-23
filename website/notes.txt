@@ -1,0 +1,4 @@
+Some notes about React. 
+
+- React is all about re-using components. All the files within the src folder hold jsx code
+for components, and then we re-use those components to build our main App. 
