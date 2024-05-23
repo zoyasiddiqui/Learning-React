@@ -1,0 +1,2 @@
+Every browser has a javascript engine
+If you right click and inspect on Chrome and then check out the console, that is what runs your code!
