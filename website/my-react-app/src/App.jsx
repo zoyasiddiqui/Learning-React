@@ -4,8 +4,12 @@ import Card from './Card.jsx'
 import Button from './Button.jsx'
 import Student from './Student.jsx'
 import UserGreeting from './UserGreeting.jsx'
+import List from './List.jsx'
 
 function App() {
+
+  const passedList = [{pos:1, name:"zoya"},{pos:2, name:"bilal"},{pos:3, name:"shahnee"}];
+
   return(
     <> 
       <Header></Header>
@@ -18,6 +22,7 @@ function App() {
       <Student name="Patrick" age={42} isStudent={false}></Student>
       <Student></Student>
       <Button></Button>
+      {passedList.length ? <List passedList={passedList}></List> : null}
       <Footer></Footer>
     </>
   );
