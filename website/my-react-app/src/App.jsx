@@ -5,6 +5,7 @@ import Button from './Button.jsx'
 import Student from './Student.jsx'
 import UserGreeting from './UserGreeting.jsx'
 import List from './List.jsx'
+import ProfilePic from './ProfilePic.jsx'
 
 function App() {
 
@@ -15,8 +16,9 @@ function App() {
       <Header></Header>
       {/* One way to declare elemenets is as follows , with just the one </> */}
       <UserGreeting isLoggedIn={true} username="Zoya"/> 
-
+      
       {/* But I prefer this way , <> </> */}
+      <ProfilePic></ProfilePic>
       <Card></Card>
       <Student name="Spongebob" age={30} isStudent={true}></Student>
       <Student name="Patrick" age={42} isStudent={false}></Student>

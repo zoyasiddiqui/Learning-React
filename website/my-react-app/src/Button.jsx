@@ -7,8 +7,26 @@
 
 function Button() {
 
+    // write a function within a function, fine to do in this case!
+    const handleClick = (e) => console.log(e);
+    //to understand how we got e.target.textContent, check out the SyntheticBaseEvent thing that
+    //is printed when you call handleClick(). It has attributes!
+    const handleClickButtonName = (e) => e.target.textContent = "CHANGED NAME";
+    const handleClick2 = (name) => console.log(`${name}, stop clicking!`); 
+    let count = 0;
+    const handleClick3 = () => {
+        count++;
+        console.log(`You clicked me ${count} times`);
+    };
+
     return (
-        <button className="button">Click Me</button>
+        // using the arrow function in onClick prevents the function from being called right away.
+        // if we don't do this, the function will be called before we even click a button
+        <>  
+            <button className="button" onClick={(e) => handleClick(e)} onDoubleClick={(e) => handleClickButtonName(e)}>Click Me for Event</button>
+            <button className="button" onClick={() => handleClick2("Zoya")}>Click Me</button>
+            <button className="button" onClick={() => handleClick3()}>Click Me to Count</button>
+        </>
     );
 
 }
