@@ -6,6 +6,13 @@ import Student from './Student.jsx'
 import UserGreeting from './UserGreeting.jsx'
 import List from './List.jsx'
 import ProfilePic from './ProfilePic.jsx'
+import MyComponent from './MyComponent.jsx'
+
+// React hook = Special function that allows functional components to use react features without
+// writing class components
+
+// useState() = A React hook that allows the creation of a stateful variable AND 
+// a setter function to update its value in the virtual DOM
 
 function App() {
 
@@ -16,7 +23,7 @@ function App() {
       <Header></Header>
       {/* One way to declare elemenets is as follows , with just the one </> */}
       <UserGreeting isLoggedIn={true} username="Zoya"/> 
-      
+
       {/* But I prefer this way , <> </> */}
       <ProfilePic></ProfilePic>
       <Card></Card>
@@ -25,6 +32,7 @@ function App() {
       <Student></Student>
       <Button></Button>
       {passedList.length ? <List passedList={passedList}></List> : null}
+      <MyComponent></MyComponent>
       <Footer></Footer>
     </>
   );
