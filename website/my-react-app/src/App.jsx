@@ -8,6 +8,7 @@ import List from './List.jsx'
 import ProfilePic from './ProfilePic.jsx'
 import MyComponent from './MyComponent.jsx'
 import MyComponent2 from './MyComponent2.jsx'
+import MyComponent3 from './MyComponent3.jsx'
 
 // React hook = Special function that allows functional components to use react features without
 // writing class components
@@ -35,6 +36,7 @@ function App() {
       {passedList.length ? <List passedList={passedList}></List> : null}
       <MyComponent></MyComponent>
       <MyComponent2></MyComponent2>
+      <MyComponent3></MyComponent3>
       <Footer></Footer>
     </>
   );
