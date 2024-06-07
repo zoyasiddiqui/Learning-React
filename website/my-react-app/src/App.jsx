@@ -12,6 +12,7 @@ import MyComponent3 from './MyComponent3.jsx'
 import MyComponent4 from './MyComponent4.jsx'
 import MyComponent5 from './MyComponent5.jsx'
 import MyComponent6 from './MyComponent6.jsx'
+import MyComponent7 from './MyComponent7.jsx'
 
 // React hook = Special function that allows functional components to use react features without
 // writing class components
@@ -43,6 +44,7 @@ function App() {
       <MyComponent4></MyComponent4>
       <MyComponent5></MyComponent5>
       <MyComponent6></MyComponent6>
+      <MyComponent7></MyComponent7>
       <Footer></Footer>
     </>
   );
