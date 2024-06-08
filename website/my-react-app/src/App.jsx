@@ -13,6 +13,7 @@ import MyComponent4 from './MyComponent4.jsx'
 import MyComponent5 from './MyComponent5.jsx'
 import MyComponent6 from './MyComponent6.jsx'
 import MyComponent7 from './MyComponent7.jsx'
+import WidthHeightAdjuster from './WidthHeightAdjuster.jsx'
 
 // React hook = Special function that allows functional components to use react features without
 // writing class components
@@ -32,6 +33,7 @@ function App() {
 
       {/* But I prefer this way , <> </> */}
       <ProfilePic></ProfilePic>
+      <WidthHeightAdjuster></WidthHeightAdjuster>
       <Card></Card>
       <Student name="Spongebob" age={30} isStudent={true}></Student>
       <Student name="Patrick" age={42} isStudent={false}></Student>
